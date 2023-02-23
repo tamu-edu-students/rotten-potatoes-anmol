@@ -8,13 +8,21 @@ class MoviesController < ApplicationController
 
   # GET /movies/1 or /movies/1.json
   def show
-    id = params[:id]
+    id = params[:id] 
     @movie = Movie.find(id) 
   end
 
   # GET /movies/new
   def new
     @movie = Movie.new
+  end
+
+  def rating
+    @movie = Movie.order('id ASC').reorder('rating DESC')
+  end
+
+  def release
+    @movie = Movie.order('id ASC').reorder('release_date DESC')
   end
 
   # GET /movies/1/edit

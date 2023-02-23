@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  resources :movies
-  root :to => redirect('/movies')
+resources :movies do
+get 'rating', 'release', on: :collection
+end
+root :to => redirect('/movies')
 end
