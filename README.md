@@ -1,24 +1,9 @@
-# README
+# RottenPotatoes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web-app to review movies as part of HW2 for the Software Engineering course.
 
-Things you may want to cover:
+link: https://rotten-potatoes-anmol.herokuapp.com/movies
 
-* Ruby version
+# Additional features
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The sort by rating/release date buttons sort movies in descending order of their rating/release date respectively.
