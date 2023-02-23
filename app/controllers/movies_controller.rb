@@ -8,6 +8,8 @@ class MoviesController < ApplicationController
 
   # GET /movies/1 or /movies/1.json
   def show
+    id = params[:id]
+    @movie = Movie.find(id) 
   end
 
   # GET /movies/new
